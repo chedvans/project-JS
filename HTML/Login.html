@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <h2 class="active"> Sign In </h2>
+          <div class="fadeIn first">
+          </div>
+          <form onsubmit="getName(event)" id="loginForm">
+            <input  id="login" class="fadeIn second" name="mail" placeholder="מייל" type="email" pattern="[A-Za-z\d@.]*" required>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="סיסמא" 
+                   pattern="^\d{6}$" title="הסיסמא חייבת להיות בדיוק 6 ספרות" required>
+            <input type="submit" value="כניסה" class="fadeIn fourth">
+        </form>
+          <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    <!-- <a href=" window.history.back()">חזרה לאחור</a>  -->
+      <script src="../JS/register.js"></script>
+      <img src="./image.png">
+     
+</body>
+</html>
+</body>
+</html>

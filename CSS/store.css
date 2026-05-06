@@ -1,0 +1,19 @@
+body {
+  width: 100vh;
+  height: 100%;
+}
+
+section {
+  height: 90%;
+  width: 100%;
+  border-color: black;
+  border-style: groove;
+}
+
+.div-card {
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+

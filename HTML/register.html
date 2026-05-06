@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הרשמה</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <h2 class="active"> הרשמה </h2>
+
+      <form onsubmit="saveName(event)" id="loginForm">
+        <input type="text" class="p" name="firstName" placeholder="שם פרטי" required>
+        <input type="email" class="p" name="email" placeholder="מייל" required>
+        <input type="password" class="p" name="password"
+               placeholder="סיסמה (6 ספרות)"
+               pattern="^\d{6}$"
+               title="הסיסמה חייבת להיות בדיוק 6 ספרות"
+               required>
+        <input type="submit" value="הרשמה" class="fadeIn fourth">
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" href="Login.html">כבר רשום? התחבר כאן</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../JS/register.js"></script>
+</html>

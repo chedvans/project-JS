@@ -1,0 +1,145 @@
+#my-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+}
+
+/* תיבה מרכזית */
+#my-section .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  z-index: 1;
+  padding: 20px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#my-section .btn {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 3px;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  margin: 20px 0;
+}
+
+#my-section .btn:hover {
+  background-color: rgba(22, 160, 133, 0.7);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#my-section .btnm {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#my-section .btnm:hover {
+  background-color: rgba(22, 160, 133, 0.7);
+}
+
+/* רקע */
+#my-section .with-bg-size {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  animation: back 20s infinite linear;
+  z-index: -2;
+  transition: background-image 1s ease-in-out;
+}
+
+/* שכבת צבע כהה על הרקע */
+#my-section #color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* כותרת */
+.card h1.main-title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+/* טקסט */
+.card .description {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  white-space: pre-line;
+}
+
+/* אנימציית רקע */
+@keyframes back {
+  0% {
+    background-image: url("../תמונות/כניסה/נעל (1).webp");
+  }
+  12.5% {
+    background-image: url("../תמונות/כניסה/נעל (2).png");
+  }
+  25% {
+    background-image: url("../תמונות/כניסה/נעל (2).webp");
+  }
+  37.5% {
+    background-image: url("../תמונות/כניסה/נעל (3).png");
+  }
+  50% {
+    background-image: url("../תמונות/כניסה/נעל (3).webp");
+  }
+  62.5% {
+    background-image: url("../תמונות/כניסה/נעל (5).png");
+  }
+  75% {
+    background-image: url("../תמונות/כניסה/נעל (6).webp");
+  }
+  87.5% {
+    background-image: url("../תמונות/כניסה/נעל (7).webp");
+  }
+  100% {
+    background-image: url("../תמונות/כניסה/נעל (1).webp");
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../CSS/Settings.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <div class="form-wrapper">
+            <div class="form-container" id="formContainer">
+
+                <div class="form-side signup-form">
+                    <div class="form-header">
+                        <h1 class="form-title">Welcome settings page!</h1>
+                        <p class="form-subtitle">
+                            כאן תוכלו להתאים את החוויה האישית שלכם: לשנות פרטים, לבחור עיצובים, להגדיר התראות ולשלוט בהעדפות החשבון שלכם.
+                            הכול פשוט ונוח, כדי שתוכלו ליהנות מהממשק בצורה שהכי מתאימה לכם.
+                        </p>
+                    </div>
+
+                    <div class="social-login">
+                        <a href="#" class="social-btn">Google</a>
+                        <a href="#" class="social-btn">Facebook</a>
+                    </div>
+
+                    <div class="form-divider">
+                        <span>or sign up with email</span>
+                    </div>
+
+                            <!--שינויים  -->
+<!-- //סוג גופן -->
+  <div class="form-row">
+    <div class="form-group">
+        <label class="form-label">סוג גופן</label>
+        <select class="form-input" id="fontSelect">
+            <option value="">בחר גופן</option>
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+    </div>
+<!--  כותרת--צבע גופן -->
+    <div class="form-group">
+        <label class="form-label">צבע גופן</label>
+        <select class="form-input" id="fontColorSelect">
+            <option value="">בחר צבע</option>
+            <option value="black">שחור</option>
+            <option value="blue">כחול</option>
+            <option value="red">אדום</option>
+            <option value="green">ירוק</option>
+            <option value="purple">סגול</option>
+        </select>
+    </div>
+</div>
+<!-- צבע רקע -->
+<div class="form-group">
+    <label class="form-label"> צבע רקע</label>
+    <select class="form-input" id="backgroundColorSelect">
+        <option value="">בחר צבע </option>
+        <option value="red">אדום</option>
+        <option value="green">ירוק</option>
+        <option value="pink">ורוד</option>
+    </select>
+</div>
+
+                    <div class="form-options">
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="terms" required>
+                            <label for="terms" class="form-label">I agree to the terms</label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="submit-btn" id="change" onclick="change()">החל שינויים</button>
+
+                    <div class="form-switch">
+                        <p class="switch-text">
+                            Already have an account?
+                            <span class="switch-link" >Sign in</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-side login-form">
+                    <div class="form-header">
+                        <h1 class="form-title">Welcome Back</h1>
+                        <p class="form-subtitle">Sign in to your account</p>
+                    </div>
+
+                    <div class="social-login">
+                        <a href="#" class="social-btn">Google</a>
+                        <a href="#" class="social-btn">Facebook</a>
+                    </div>
+
+                    <div class="form-divider">
+                        <span>or sign in with email</span>
+                    </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <script src="../JS/Settings.js"></script>
+</body>
+</html>
